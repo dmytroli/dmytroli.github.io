@@ -1,1 +1,0 @@
-$(function(){$(".bxslider").bxSlider({mode:"fade",captions:!0,slideWidth:600})});
