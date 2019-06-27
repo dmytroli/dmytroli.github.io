@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="main keywords">
+	<meta name="description" content="description for site">
+
+	<title>Test Site</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	
+	<!-- bxSlider CSS file -->
+	<link href="css/jquery.bxslider.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<link rel="preload" href="css/style.css" as="style">
+	<link rel="preload" href="js/wow.min.js" as="script">
+	
+
+</head>
+<body>
+	<div style="display: none">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="cart" viewbox="0 0 12 12">
+  <metadata>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""></rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+</metadata>
+<image id="cart" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBgcNBA+ymEVTAAAAkUlEQVQY023OLQ+BYRjF8d/ueZlNkmwCwSbyrRTNR5JkJgkmkLxFDQ9JFIzNHuH2SM855ez8d107RDUsnZxtNWMRfmBopqVpZBCLgraqp5qVHhJdHRWPgqPgYK9mhz7Gul7BHXUTH/A21cCdjVTqLf05pnVwBUWZYkqCmzzdgiQXXLNXOReXXHCibPFflHmu9AX2GzNnQMocjgAAAABJRU5ErkJggg=="></image>
+</symbol><symbol id="compare" viewbox="0 0 10 10">
+  <metadata>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""></rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+</metadata>
+<image id="compare" width="10" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBgcNBCuOm6GCAAAAIklEQVQI12NggIH/DP9hTCYGLIAFQ+Q/AwMTsja82ukmCABKbQUQfjBk+QAAAABJRU5ErkJggg=="></image>
+</symbol><symbol id="search" viewbox="0 0 16 16">
+  <metadata>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""></rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+</metadata>
+<image id="search" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBgcNAxR3vBp4AAAAp0lEQVQoz33RwQnCQBCF4S9aRC6JVdhFqrAdIViQh7QhUUSwBwMRGQ9LNImYN5dd3r/M2xmSSrVWr9eqlWba6cSoOrupHUKjkstVGiG+SKkT9rLPg8xe6IZGtdCM7IQ0Qp0urVDNQ6mENh17If8BcqGXsfJfa1i5YftjbnEVyyEPy9982CwP6q74P+qHu3AZI8OyXs4ONgqXOZK6f5Mk5DRNP1Xh6PkGn8VTPFsws7wAAAAASUVORK5CYII="></image>
+</symbol><symbol id="sprite"><symbol id="cart" viewbox="0 0 12 12">
+  <metadata>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""></rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+</metadata>
+<image id="cart" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBgcNBA+ymEVTAAAAkUlEQVQY023OLQ+BYRjF8d/ueZlNkmwCwSbyrRTNR5JkJgkmkLxFDQ9JFIzNHuH2SM855ez8d107RDUsnZxtNWMRfmBopqVpZBCLgraqp5qVHhJdHRWPgqPgYK9mhz7Gul7BHXUTH/A21cCdjVTqLf05pnVwBUWZYkqCmzzdgiQXXLNXOReXXHCibPFflHmu9AX2GzNnQMocjgAAAABJRU5ErkJggg=="></image>
+</symbol><symbol id="compare" viewbox="0 0 10 10">
+  <metadata>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""></rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+</metadata>
+<image id="compare" width="10" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBgcNBCuOm6GCAAAAIklEQVQI12NggIH/DP9hTCYGLIAFQ+Q/AwMTsja82ukmCABKbQUQfjBk+QAAAABJRU5ErkJggg=="></image>
+</symbol><symbol id="search" viewbox="0 0 16 16">
+  <metadata>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""></rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+</metadata>
+<image id="search" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBgcNAxR3vBp4AAAAp0lEQVQoz33RwQnCQBCF4S9aRC6JVdhFqrAdIViQh7QhUUSwBwMRGQ9LNImYN5dd3r/M2xmSSrVWr9eqlWba6cSoOrupHUKjkstVGiG+SKkT9rLPg8xe6IZGtdCM7IQ0Qp0urVDNQ6mENh17If8BcqGXsfJfa1i5YftjbnEVyyEPy9982CwP6q74P+qHu3AZI8OyXs4ONgqXOZK6f5Mk5DRNP1Xh6PkGn8VTPFsws7wAAAAASUVORK5CYII="></image>
+</symbol><symbol id="sprite"><symbol id="cart" viewbox="0 0 12 12">
+  <metadata>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""></rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+</metadata>
+<image id="cart" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBgcNBA+ymEVTAAAAkUlEQVQY023OLQ+BYRjF8d/ueZlNkmwCwSbyrRTNR5JkJgkmkLxFDQ9JFIzNHuH2SM855ez8d107RDUsnZxtNWMRfmBopqVpZBCLgraqp5qVHhJdHRWPgqPgYK9mhz7Gul7BHXUTH/A21cCdjVTqLf05pnVwBUWZYkqCmzzdgiQXXLNXOReXXHCibPFflHmu9AX2GzNnQMocjgAAAABJRU5ErkJggg=="></image>
+</symbol><symbol id="compare" viewbox="0 0 10 10">
+  <metadata>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""></rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+</metadata>
+<image id="compare" width="10" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAQAAAAnOwc2AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBgcNBCuOm6GCAAAAIklEQVQI12NggIH/DP9hTCYGLIAFQ+Q/AwMTsja82ukmCABKbQUQfjBk+QAAAABJRU5ErkJggg=="></image>
+</symbol><symbol id="search" viewbox="0 0 16 16">
+  <metadata>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""></rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+</metadata>
+<image id="search" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfjBgcNAxR3vBp4AAAAp0lEQVQoz33RwQnCQBCF4S9aRC6JVdhFqrAdIViQh7QhUUSwBwMRGQ9LNImYN5dd3r/M2xmSSrVWr9eqlWba6cSoOrupHUKjkstVGiG+SKkT9rLPg8xe6IZGtdCM7IQ0Qp0urVDNQ6mENh17If8BcqGXsfJfa1i5YftjbnEVyyEPy9982CwP6q74P+qHu3AZI8OyXs4ONgqXOZK6f5Mk5DRNP1Xh6PkGn8VTPFsws7wAAAAASUVORK5CYII="></image>
+</symbol><symbol id="user" viewbox="0 0 13 12">
+  <metadata>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""></rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+</metadata>
+<image id="user" width="13" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAMAAACOacfrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAQlBMVEUAAAAnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUAAADpDRYSAAAAFHRSTlMAY99i2v7XWSPJAYD6+4GQREWz78XdPgcAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wYHDQMqtt0H0wAAAEpJREFUCNdNyUcOgDAQQ1GnF0ogmfuflTAyIn/lJwMzY8UaMCdvjvIqTwVVoKIqUkmVqFwmStZdt12/46xTTb4acMnfjb6oYywaD7yBBxpjUPWIAAAAAElFTkSuQmCC"></image>
+</symbol></symbol><symbol id="user" viewbox="0 0 13 12">
+  <metadata>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""></rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+</metadata>
+<image id="user" width="13" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAMAAACOacfrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAQlBMVEUAAAAnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUAAADpDRYSAAAAFHRSTlMAY99i2v7XWSPJAYD6+4GQREWz78XdPgcAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wYHDQMqtt0H0wAAAEpJREFUCNdNyUcOgDAQQ1GnF0ogmfuflTAyIn/lJwMzY8UaMCdvjvIqTwVVoKIqUkmVqFwmStZdt12/46xTTb4acMnfjb6oYywaD7yBBxpjUPWIAAAAAElFTkSuQmCC"></image>
+</symbol></symbol><symbol id="user" viewbox="0 0 13 12">
+  <metadata>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""></rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+</metadata>
+<image id="user" width="13" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAMCAMAAACOacfrAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAQlBMVEUAAAAnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUnJSUAAADpDRYSAAAAFHRSTlMAY99i2v7XWSPJAYD6+4GQREWz78XdPgcAAAABYktHRACIBR1IAAAACXBIWXMAAAsSAAALEgHS3X78AAAAB3RJTUUH4wYHDQMqtt0H0wAAAEpJREFUCNdNyUcOgDAQQ1GnF0ogmfuflTAyIn/lJwMzY8UaMCdvjvIqTwVVoKIqUkmVqFwmStZdt12/46xTTb4acMnfjb6oYywaD7yBBxpjUPWIAAAAAElFTkSuQmCC"></image>
+</symbol></svg>	
+	</div>
+	<header class="main-header ">
+		<div class="container">
+			<h1 class="title title-site">Device</h1>
+			<nav class="main-navigation">
+				<div class="main-navigation__item">
+					<input type="text" placeholder="Поиск по сайту">
+					<svg class="sprite-svg">
+						<use xlink:href="#search"></use>
+					</svg>
+				</div>
+				
+				<div class="main-navigation__item main-navigation__item--center">
+					<a href="#" class="main-navigation__enter">
+						<svg class="sprite-svg sprite-svg--user">
+							<use xlink:href="#user"></use>
+						</svg>
+						Войти
+					</a>
+					
+				</div>
+				<div class="main-navigation__wrapp">
+					<div class="main-navigation__item">
+						<a href="#" class="main-navigation__compare">
+							<svg class="sprite-svg sprite-svg--compare">
+								<use xlink:href="#compare"></use>
+							</svg>
+							Сравнить
+						</a>
+					</div>
+					<div class="main-navigation__item">
+						<a href="#" class="main-navigation--cart">
+							<svg class="sprite-svg sprite-svg--cart">
+							<use xlink:href="#cart"></use>
+						</svg>
+						Корзина</a>
+					</div>
+					
+				</div>
+			</nav>
+			<button class="mobile-buttonMenu">
+			</button>
+			<ul class="header-menu header-menu--close">
+				<li class="link header-menuItem catalog">	<a href="#" class="header-menuLink">Каталог товаров</a>
+					<ul class="header-secondMenu header-secondMenu--close">
+						<li class="header-secondMenu__item">
+							<a href="#" class="header-secondMenu__link">Виртуальня реальность</a>
+							<a href="#" class="header-secondMenu__link">Моноподы для селфи</a>
+							<a href="#" class="header-secondMenu__link">Экшн-камеры</a>
+						</li>
+						<li class="header-secondMenu__item">
+							<a href="#" class="header-secondMenu__link">Фитнес браслеты</a>
+							<a href="#" class="header-secondMenu__link">Умные часы</a>
+						</li>
+						<li class="header-secondMenu__item">
+							<a href="#" class="header-secondMenu__link">Квадракоптеры</a>
+						</li>
+						<li class="header-secondMenu__item"></li>
+						<li class="header-secondMenu__item"></li>
+						<li class="header-secondMenu__item"></li>
+					</ul>
+				</li>
+				<li class="li header-menuItem"><a href="#" class="header-menuLink">Доставка</a></li>
+				<li class="li header-menuItem"><a href="#" class="header-menuLink">Гарантия</a></li>
+				<li class="li header-menuItem"><a href="#" class="header-menuLink">Контакты</a></li>
+			</ul>
+			<article class="slider">
+				<h2 class="visually-hidden">Slider</h2>
+				<ul class="bxslider">
+					<li class="slider-one">
+						<img src="img/slider-1.png" alt="slide image" width="384" height="486">
+						<div class="bxslider__wrapp">
+							<div class="bxslider__number">01</div>
+							<h3 class="bxslider__title">Делай селфи,<br> как Бен Стиллер!</h3>
+							<p class="bxslider__text">	Самая длинная палка для 	селфи доступна в нашем магазине.
+								<span>Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</span>
+							</p>
+							<p class="yellow-line">подробнее</p>
+							<ul class="statistic-block">
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">8,5м</p>	
+									<p class="statistic-block__smalltext">Длина палки</p>	
+								</li>
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">5 кг</p>	
+									<p class="statistic-block__smalltext">Вес палки</p>	
+								</li>
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">Карбон</p>	
+									<p class="statistic-block__smalltext">Материал</p>	
+								</li>
+							</ul>
+						</div>
+
+					</li>
+					<li class="slider-two">
+						<img src="img/slider-2.png" alt="slide image" width="345" height="486">
+						<div class="bxslider__wrapp">
+							<div class="bxslider__number">02</div>
+							<h3 class="bxslider__title">Худеем<br> правильно!</h3>
+							<p class="bxslider__text">	Мотивирующие фитнес-браслеты помогут найти в себе силы 
+							не пропускать занятия и соблюдать диету.
+							</p>
+							<p class="yellow-line">подробнее</p>
+							<ul class="statistic-block">
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">48 часов</p>	
+									<p class="statistic-block__smalltext">Без подзарядки</p>	
+								</li>
+								<li class="statistic-block__item">
+								</li>
+								<li class="statistic-block__item">
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li class="slider-tree">
+						<img src="img/slider-3.png" alt="slide image" width="526" height="334">
+						<div class="bxslider__wrapp">
+							<div class="bxslider__number">03</div>
+							<h3 class="bxslider__title">Порхает как бабочка,
+							<br> жалит как пчела!</h3>
+							<p class="bxslider__text">	Этот обычный, на первый взгляд, квадрокоптер оснащен 
+							мощным лазером, замаскированным под стандартную камеру.
+							</p>
+							<p class="yellow-line">подробнее</p>
+							<ul class="statistic-block">
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">800 м</p>	
+									<p class="statistic-block__smalltext">Дальность полета</p>	
+								</li>
+								<li class="statistic-block__item">
+									<p class="statistic-block__bigtext">50 м</p>	
+									<p class="statistic-block__smalltext">Радиус поражения</p>	
+								</li>
+								<li class="statistic-block__item">
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</header>
+
+	<main class="index-main">
+		<div class="container">
+			<section class="popular">
+				<h2 class="visually-hidden">Popular products</h2>
+				<ul class="popular__list">
+					<li class="popular__item">
+						<div class="popular__image"><img src="img/popular-1.png" alt="popular image"></div>
+						<div class="popular__text">Виртуальная <br> реальность</div>
+					</li>
+					<li class="popular__item">
+						<div id="sephi" class="popular__image"><img src="img/popular-2.png" alt="popular image"></div>
+						<div class="popular__text">Моноподы <br> для селфи</div>
+					</li>
+					<li class="popular__item">
+						<div id="camera" class="popular__image"><img src="img/popular-3.png" alt="popular image"></div>
+						<div class="popular__text">Экшн-камеры</div>
+					</li>
+					<li class="popular__item">
+						<div class="popular__image"><img src="img/popular-4.png" alt="popular image"></div>
+						<div class="popular__text">Фитнес-браслеты</div>
+					</li>
+					<li class="popular__item">
+						<div class="popular__image"><img src="img/popular-5.png" alt="popular image"></div>
+						<div class="popular__text">Умные часы</div>
+					</li>
+					<li class="popular__item">
+						<div class="popular__image"><img src="img/popular-6.png" alt="popular image"></div>
+						<div class="popular__text">Квадракоптеры</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+		<section class="delivery">
+			<h2 class="visually-hidden">delivery</h2>
+			<div class="container">
+				<ul class="list delivery__list">
+					<li class="delivery__item">Доставка</li>
+					<li class="delivery__item">Гарантия</li>
+					<li class="delivery__item">Кредит</li>
+				</ul>
+				<div class="delivery-main">
+					<h2 class="delivery-main__title">Доставка</h2>
+					<p class="delivery-main__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+				</div>
+				<img src="img/delivery.png" alt="delivery" class="delivery-image" width="136" height="164">
+			</div>
+		</section>
+		<section class="manufacturers">
+			<h2 class="visually-hidden">manufacturers</h2>
+			<div class="container">
+				<img src="img/logo-1.jpg" alt="logotip" class="manufacturers__image">
+				<img src="img/logo-2.jpg" alt="logotip" class="manufacturers__image">
+				<img src="img/logo-3.jpg" alt="logotip" class="manufacturers__image">
+				<img src="img/logo-4.jpg" alt="logotip" class="manufacturers__image">
+			</div>
+		</section>
+		<section class="information">
+			<h2 class="visually-hidden">information</h2>
+			<div class="container">
+				<div class="information-aboutUs">
+					<h2 class="information__title">
+						О нас
+					</h2>
+					<p class="information__text">
+						Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+					</p>
+					<p class="information__text">
+						Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+					</p>
+					<ul class="information-aboutUs__list">
+						<li class="information-aboutUs__item">
+							Деловые Линии
+						</li>
+						<li class="information-aboutUs__item">
+							Автотрейдинг
+						</li>
+						<li class="information-aboutUs__item">
+							ЖелДорЭкспедиция
+						</li>
+					</ul>
+					<a href="#" class="information__boldText">
+						Подробнее о нас
+					</a>
+				</div>
+				<div class="information-contacts">
+					<h2 class="information__title">	Контакты</h2>
+					<p class="information__text">
+						Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+					</p>
+					<iframe class="information__image" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d40595.013387628256!2d28.351951711029116!3d50.512062424496065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1560101822388!5m2!1suk!2sua" width="560" height="222" style="border:0" allowfullscreen=""></iframe>
+					<!--<img src="img/map.jpg" alt="map" class="information__image" width="560" height="222"> -->
+					<a href="#" class="information__boldText">
+						Напишите нам
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	
+
+	<footer class="index-footer">
+		<div class="container">
+			<section class="footer-left">
+				<h2 class="index-footer__title">
+					Device
+				</h2>
+				<p class="footer-left__text">
+					г. Москва, ул. Строителей, 15
+				</p>
+			</section>
+			<section class="footer-center">
+				<h2 class="visually-hidden">
+					social
+				</h2>
+				<ul class="footer-center__list">
+					<li class="footer-center__item"><a href="#" class="footer-center__link">Доставка</a></li>
+					<li class="footer-center__item"><a href="#" class="footer-center__link">Гарантия</a></li>
+					<li class="footer-center__item"><a href="#" class="footer-center__link">Контакты</a></li>
+				</ul>
+				<div class="footer-center__social">
+					<img src="img/fb.png" alt="social icon" class="footer-center__icon">
+					<img src="img/ins.png" alt="social icon" class="footer-center__icon">
+					<img src="img/twit.png" alt="social icon" class="footer-center__icon">
+				</div>
+			</section>
+			<section class="footer-right">
+				<h2 class="visually-hidden">
+					footer menu
+				</h2>
+				<ul class="footer-right__list">
+					<li class="footer-right__item">	
+						<a href="#" class="footer-right__link">
+							<img src="img/user.png" alt="user">
+							Войти
+						</a>
+					</li>
+					<li class="footer-right__item">
+						<a href="#" class="footer-right__link">
+							<img src="img/compare.png" alt="user">
+							Сравнить
+						</a>
+					</li>
+					<li class="footer-right__item">
+						<a href="#" class="footer-right__link">
+							<img src="img/cart.png" alt="user">
+							Корзина
+						</a>
+					</li>
+				</ul>
+				<p class="footer-right__text">
+					Тел.: +7 (495) 495-95-95
+				</p>
+				<img src="img/logo-html.png" alt="logo html" class="footer-right__image">
+				
+			</section>
+		</div>
+	</footer>
+	
+	
+	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+	<script src="js/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<script src="js/bootstrap.min.js"></script>
+
+	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/parallax.js"></script>
+	<script src="js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
+    <script src="js/custom.js"></script>
+</body>
+</html>
+
+
+<!--slider
+<article class="slider">
+	<h2 class="visually-hidden">Slider</h2>
+	<ul class="bxslider">
+		<li><img src="img/slide-img.jpg" alt="slide image" /></li>
+		<li><img src="img/slide-img.jpg" alt="slide image" /></li>
+		<li><img src="img/slide-img.jpg"  alt="slide image" /></li>
+	</ul>
+</article> -->
+
+<!-- paralax
+<section class="parallax-window" data-parallax="scroll" data-image-src="img/..." data-position="center -250">
+	<div class="parallax-s__wrapp">
+		<h2 class="title title--paralacs">	Our Vision
+				</h2>
+		<p class="parallax-s__text">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> 
+			sed  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+		</p>
+		<img src="img/fixed-image..." alt="" class="hands">
+	</div>
+</section>  -->
+
+<!-- paralax-mobile
+<section class="parallax-window--mobile" data-parallax="scroll" data-image-src="img/par-fon-big.jpg" data-position="center 0">
+			<div class="parallax-s__wrapp">
+				<h2 class="title title--paralacs">	Our Vision
+				</h2>
+				<p class="parallax-s__text">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> 
+						sed  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+				<img src="img/hands.svg" alt="hands" class="hands">
+			</div>
+		</section> -->
