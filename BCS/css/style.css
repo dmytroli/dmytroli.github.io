@@ -706,6 +706,19 @@ ul {
             box-shadow: 0 0 10px lightgray;
     color: #000;
     text-decoration: none; }
+  .shek-images__button--disabled {
+    color: #9e9d9b !important;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f3e089), to(#f8ebb0));
+    background-image: -webkit-linear-gradient(top, #f3e089, #f8ebb0);
+    background-image: -o-linear-gradient(top, #f3e089, #f8ebb0);
+    background-image: linear-gradient(to bottom, #f3e089, #f8ebb0); }
+    .shek-images__button--disabled:hover {
+      -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+              transform: scale(1);
+      -webkit-box-shadow: none;
+              box-shadow: none;
+      text-decoration: none; }
 
 /* $product-image-width: 300px;
 $product-image-height: $product-image-width;
