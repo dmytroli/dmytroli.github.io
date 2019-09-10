@@ -39,7 +39,11 @@
   color: #000;
   text-transform: uppercase; }
 
+.snek-trans .snek-page__title {
+  width: 80%; }
+
 .snek-page__text {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.5; }
 
@@ -105,7 +109,11 @@
     min-height: 190px; }
   .snek-page__title {
     font-size: 30px;
-    width: 80%; } }
+    width: 80%; }
+  .snek-trans .snek-page__title {
+    width: 95%;
+    font-size: 16px;
+    text-align: center; } }
 
 @media screen and (max-width: 540px) {
   .breadcrumbs, .header-menu {
@@ -114,23 +122,37 @@
             box-shadow: none;
     left: 0; }
   .snek-page__title {
-    font-size: 25px; } }
+    font-size: 25px; }
+  .snek-trans .breadcrumbs__item .breadcrumbs__link,
+  .snek-trans .breadcrumbs__item .breadcrumbs__link--inert {
+    font-size: 10px;
+    letter-spacing: 1px; } }
 
 @media screen and (max-width: 425px) {
   .page-production-item .main-header {
     min-height: 150px; }
   .page-production-item .main-header__title-wrapp {
     margin-bottom: 5px; }
+  .breadcrumbs {
+    margin-top: 15px; }
   .breadcrumbs__item .breadcrumbs__link,
   .breadcrumbs__item .breadcrumbs__link--inert {
     font-size: 10px;
+    letter-spacing: 1px; }
+  .snek-trans .breadcrumbs__item .breadcrumbs__link,
+  .snek-trans .breadcrumbs__item .breadcrumbs__link--inert {
+    font-size: 8px;
     letter-spacing: 1px; } }
 
 @media screen and (max-width: 375px) {
   .breadcrumbs__item .breadcrumbs__link,
   .breadcrumbs__item .breadcrumbs__link--inert {
     font-size: 8px;
-    letter-spacing: 1.5px; } }
+    letter-spacing: 1.5px; }
+  .snek-trans .breadcrumbs__item .breadcrumbs__link,
+  .snek-trans .breadcrumbs__item .breadcrumbs__link--inert {
+    font-size: 7px;
+    letter-spacing: 1px; } }
 
 @media screen and (max-width: 320px) {
   .page-production-item .main-header {
@@ -140,4 +162,7 @@
     font-size: 7px;
     letter-spacing: 1.1px; }
   .snek-page__title {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .snek-trans .breadcrumbs__item .breadcrumbs__link,
+  .snek-trans .breadcrumbs__item .breadcrumbs__link--inert {
+    font-size: 6px; } }
